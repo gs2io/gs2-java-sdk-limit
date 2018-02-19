@@ -83,6 +83,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				CreateCounterMasterRequest.Constant.MODULE,
 				CreateCounterMasterRequest.Constant.FUNCTION,
 				body.toString());
+        if(request.getRequestId() != null) {
+            post.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(post, CreateCounterMasterResult.class);
@@ -113,6 +116,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				CreateLimitRequest.Constant.MODULE,
 				CreateLimitRequest.Constant.FUNCTION,
 				body.toString());
+        if(request.getRequestId() != null) {
+            post.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(post, CreateLimitResult.class);
@@ -140,6 +146,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				DeleteCounterRequest.Constant.MODULE,
 				DeleteCounterRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            delete.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		doRequest(delete, null);
@@ -167,6 +176,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				DeleteCounterMasterRequest.Constant.MODULE,
 				DeleteCounterMasterRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            delete.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		doRequest(delete, null);
@@ -194,6 +206,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				DeleteLimitRequest.Constant.MODULE,
 				DeleteLimitRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            delete.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		doRequest(delete, null);
@@ -229,6 +244,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				DescribeCounterRequest.Constant.MODULE,
 				DescribeCounterRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, DescribeCounterResult.class);
@@ -264,6 +282,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				DescribeCounterByUserIdRequest.Constant.MODULE,
 				DescribeCounterByUserIdRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, DescribeCounterByUserIdResult.class);
@@ -299,6 +320,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				DescribeCounterMasterRequest.Constant.MODULE,
 				DescribeCounterMasterRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, DescribeCounterMasterResult.class);
@@ -334,6 +358,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				DescribeLimitRequest.Constant.MODULE,
 				DescribeLimitRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, DescribeLimitResult.class);
@@ -363,6 +390,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				ExportMasterRequest.Constant.MODULE,
 				ExportMasterRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, ExportMasterResult.class);
@@ -392,6 +422,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				GetCounterRequest.Constant.MODULE,
 				GetCounterRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, GetCounterResult.class);
@@ -421,6 +454,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				GetCounterMasterRequest.Constant.MODULE,
 				GetCounterMasterRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, GetCounterMasterResult.class);
@@ -450,6 +486,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				GetCurrentCounterMasterRequest.Constant.MODULE,
 				GetCurrentCounterMasterRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, GetCurrentCounterMasterResult.class);
@@ -479,6 +518,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				GetLimitRequest.Constant.MODULE,
 				GetLimitRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, GetLimitResult.class);
@@ -508,6 +550,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				GetLimitStatusRequest.Constant.MODULE,
 				GetLimitStatusRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(get, GetLimitStatusResult.class);
@@ -537,6 +582,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				ENDPOINT,
 				GetMyCounterRequest.Constant.MODULE,
 				GetMyCounterRequest.Constant.FUNCTION);
+        if(request.getRequestId() != null) {
+            get.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
         get.setHeader("X-GS2-ACCESS-TOKEN", request.getAccessToken());
 
@@ -566,6 +614,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				UpCounterRequest.Constant.MODULE,
 				UpCounterRequest.Constant.FUNCTION,
 				body.toString());
+        if(request.getRequestId() != null) {
+            put.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(put, UpCounterResult.class);
@@ -594,6 +645,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				UpMyCounterRequest.Constant.MODULE,
 				UpMyCounterRequest.Constant.FUNCTION,
 				body.toString());
+        if(request.getRequestId() != null) {
+            put.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
         put.setHeader("X-GS2-ACCESS-TOKEN", request.getAccessToken());
 
@@ -628,6 +682,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				UpdateCounterMasterRequest.Constant.MODULE,
 				UpdateCounterMasterRequest.Constant.FUNCTION,
 				body.toString());
+        if(request.getRequestId() != null) {
+            put.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(put, UpdateCounterMasterResult.class);
@@ -657,6 +714,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				UpdateCurrentCounterMasterRequest.Constant.MODULE,
 				UpdateCurrentCounterMasterRequest.Constant.FUNCTION,
 				body.toString());
+        if(request.getRequestId() != null) {
+            post.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(post, UpdateCurrentCounterMasterResult.class);
@@ -686,6 +746,9 @@ public class Gs2LimitClient extends AbstractGs2Client<Gs2LimitClient> {
 				UpdateLimitRequest.Constant.MODULE,
 				UpdateLimitRequest.Constant.FUNCTION,
 				body.toString());
+        if(request.getRequestId() != null) {
+            put.setHeader("X-GS2-REQUEST-ID", request.getRequestId());
+        }
 
 
 		return doRequest(put, UpdateLimitResult.class);
