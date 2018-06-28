@@ -36,11 +36,11 @@ public class Counter implements Serializable {
 	/** カウンター名 */
 	private String counterName;
 
-	/** カウント値 */
+	/** 現在のカウント値 */
 	private Integer count;
 
-	/** カウントの最大値 */
-	private Integer max;
+	/** カウントのリミット値 */
+	private Integer limit;
 
 	/** 次回リセット日時(エポック秒) */
 	private Integer nextResetAt;
@@ -86,39 +86,39 @@ public class Counter implements Serializable {
 	}
 
 	/**
-	 * カウント値を取得
+	 * 現在のカウント値を取得
 	 *
-	 * @return カウント値
+	 * @return 現在のカウント値
 	 */
 	public Integer getCount() {
 		return count;
 	}
 
 	/**
-	 * カウント値を設定
+	 * 現在のカウント値を設定
 	 *
-	 * @param count カウント値
+	 * @param count 現在のカウント値
 	 */
 	public void setCount(Integer count) {
 		this.count = count;
 	}
 
 	/**
-	 * カウントの最大値を取得
+	 * カウントのリミット値を取得
 	 *
-	 * @return カウントの最大値
+	 * @return カウントのリミット値
 	 */
-	public Integer getMax() {
-		return max;
+	public Integer getLimit() {
+		return limit;
 	}
 
 	/**
-	 * カウントの最大値を設定
+	 * カウントのリミット値を設定
 	 *
-	 * @param max カウントの最大値
+	 * @param limit カウントのリミット値
 	 */
-	public void setMax(Integer max) {
-		this.max = max;
+	public void setLimit(Integer limit) {
+		this.limit = limit;
 	}
 
 	/**
